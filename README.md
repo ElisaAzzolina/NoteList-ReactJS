@@ -1,1 +1,1 @@
-# NoteList-ReactJS
+# A little NoteList App created with ReactJS.
