@@ -1,0 +1,46 @@
+.note {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px 30px 10px 30px;
+  min-width: 360px;
+  max-height: 400px;
+  background-color: white;
+  box-shadow: 0px 19px 40px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+
+  button {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background: none;
+    border: none;
+    color: #dc5b82;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover {
+      font-weight: bold;
+    }
+  }
+}
+
+p {
+  overflow-y: scroll;
+  padding-right: 10px;
+  &::-webkit-scrollbar-track {
+    background-color: #ffffff;
+  }
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    background-color: #f5f5f5;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #dc5b82;
+    height: 10px;
+  }
+}

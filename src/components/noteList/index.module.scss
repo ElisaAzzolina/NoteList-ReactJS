@@ -1,0 +1,32 @@
+.noteList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  padding-top: 100px;
+}
+
+@media screen and (min-width: 676px) {
+  .noteList {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 40px 0px 80px 40px;
+    overflow-x: scroll;
+    &::-webkit-scrollbar-track {
+      background-color: #ffffff;
+    }
+
+    &::-webkit-scrollbar {
+      width: 5px;
+      height: 10px;
+      background-color: #f5f5f5;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #dc5b82;
+      height: 10px;
+    }
+  }
+}

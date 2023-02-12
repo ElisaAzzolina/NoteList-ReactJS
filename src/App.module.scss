@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.app {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 676px) {
+  .app {
+    main {
+      flex-direction: row;
+      gap: 50px;
+    }
+  }
+  .sxSide {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dxSide {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
