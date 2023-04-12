@@ -1,7 +1,7 @@
 import styles from "./index.module.scss";
 
 import { useContext } from "react";
-import { ApplicationContext } from "../../store";
+import { ApplicationContext, initialState } from "../../store";
 
 import Note from "../note";
 
@@ -10,9 +10,9 @@ function NoteList() {
 
   return (
     <div className={styles.noteList}>
-      {state.noteList.map((note) => (
-        <Note data={note} key={note.id} />
-      ))}
+      {state.noteList
+        .map((note) => <Note data={note} key={note.id} />)
+        .reverse()}
     </div>
   );
 }

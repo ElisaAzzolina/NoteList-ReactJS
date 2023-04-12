@@ -18,6 +18,8 @@ const globalReducer = (state, action) => {
       };
 
     case ACTIONS.DELETE_NOTE:
+      localStorage.removeItem("noteList-To-Filter", action.payload);
+      localStorage.removeItem("noteList", action.payload);
       return {
         ...state,
         noteList: state.noteList.filter((note) => note.id !== action.payload),

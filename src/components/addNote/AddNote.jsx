@@ -27,9 +27,9 @@ function AddNote() {
   return (
     <div className={styles.addNote}>
       <div className={styles.title}>
-        <h1>Le mie Note</h1>
+        <h1>Note</h1>
       </div>
-      <h2>Aggiungi una Nota:</h2>
+      <h2>Aggiungi:</h2>
       <form onSubmit={onHandleSubmit}>
         <input
           type="text"

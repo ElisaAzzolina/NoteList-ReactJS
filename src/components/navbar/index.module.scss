@@ -26,7 +26,6 @@
   input {
     width: 350px;
     padding: 12px 6px;
-    border: 0;
     border: 1px solid lightgrey;
     margin-bottom: 30px;
     cursor: pointer;
@@ -68,7 +67,8 @@
   .title {
     p {
       font-weight: 300;
-      font-size: 1.5rem;
+      font-size: 1rem;
+      display: block;
     }
   }
 }
